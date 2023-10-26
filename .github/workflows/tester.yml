@@ -26,10 +26,6 @@ jobs:
         pip install -r requirements.txt  
       working-directory: tekstfiler
 
-    - name: Install pytest
-      run: |
-        pip install pytest
-      working-directory: testshotyear.py
 
     - name: Run Tests
       run: |
