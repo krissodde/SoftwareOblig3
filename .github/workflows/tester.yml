@@ -11,18 +11,18 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
-    - name: Set up Java
-      uses: actions/setup-java
+    - name: Set up Python
+      uses: actions/setup-python
       with:
-        java-version: 11  
+        python-version: 3.x 
 
-    - name: Build and Run Tests
+    - name: Install Dependencies
       run: |
-        ./gradlew build  
-        ./gradlew test   
+        pip install -r requirements.txt  # Bytt til hvordan du installerer avhengigheter
+      working-directory: ./path/to/your/project
 
-    - name: Upload Test Results
-      uses: actions/upload-artifact@v2
-      with:
-        name: test-results
-        path: build/test-results
+    - name: Run Tests
+      run: |
+        pytest  # Bytt til din testkommando
+      working-directory: ./path/to/your/project
+
