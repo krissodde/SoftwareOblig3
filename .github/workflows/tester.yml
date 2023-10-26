@@ -19,10 +19,10 @@ jobs:
     - name: Install Dependencies
       run: |
         pip install -r requirements.txt  
-      working-directory: .Users\kr\PycharmProjects\SoftwareOblig3
+      working-directory: testfunksjon
 
     - name: Run Tests
       run: |
         pytest 
-      working-directory: .Users\kr\PycharmProjects\SoftwareOblig3
+      working-directory: testfunksjon
 
