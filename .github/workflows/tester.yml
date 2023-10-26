@@ -18,11 +18,11 @@ jobs:
 
     - name: Install Dependencies
       run: |
-        pip install -r requirements.txt  # Bytt til hvordan du installerer avhengigheter
+        pip install -r requirements.txt  
       working-directory: ./path/to/your/project
 
     - name: Run Tests
       run: |
-        pytest  # Bytt til din testkommando
+        pytest 
       working-directory: ./path/to/your/project
 
