@@ -1,4 +1,4 @@
-from testfunksjon.shotyearfunction import isLeapYear
+from testfunction import isLeapYear
 
 def test_shotyear():
     assert isLeapYear(2012) == True
