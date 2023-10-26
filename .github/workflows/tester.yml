@@ -16,10 +16,15 @@ jobs:
       with:
         python-version: 3.x 
 
+    - name: Update pip
+      run: |
+        pip install --upgrade pip
+
+
     - name: Install Dependencies
       run: |
         pip install -r requirements.txt  
-      working-directory: testfunksjon
+      working-directory: .Users\kr\PycharmProjects\SoftwareOblig3
 
     - name: Run Tests
       run: |
