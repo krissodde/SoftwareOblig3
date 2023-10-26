@@ -34,5 +34,5 @@ jobs:
     - name: Run Tests
       run: |
         pytest 
-      working-directory: testfunksjon
+      working-directory: testfunksjon/test_shotyear.py
 
