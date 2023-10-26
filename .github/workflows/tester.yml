@@ -29,10 +29,10 @@ jobs:
     - name: Install pytest
       run: |
         pip install pytest
-      working-directory: testfunksjon
+      working-directory: testshotyear.py
 
     - name: Run Tests
       run: |
         pytest 
-      working-directory: testfunksjon/test_shotyear.py
+      working-directory: testshotyear.py
 
