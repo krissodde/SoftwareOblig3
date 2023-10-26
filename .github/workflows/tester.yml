@@ -29,7 +29,6 @@ jobs:
     - name: Install pytest
       run: |
         pip install pytest
-      working-directory: /Users/kr/PycharmProjects/SoftwareOblig3
 
     - name: Run Tests
       run: |
